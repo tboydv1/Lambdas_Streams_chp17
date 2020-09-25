@@ -72,7 +72,7 @@ public class ProcessingEmployees {
 					Comparator.comparing(byLastName).thenComparing(byFirstName);
 			
 	//sort employee by last name , then first name
-			System.out.printf("%nEmployees in ascending order by last name the first:%n");
+			System.out.printf("%nEmployees in ascending order by last name then first:%n");
 			
 			list.stream()
 				.sorted(lastThenFirst)

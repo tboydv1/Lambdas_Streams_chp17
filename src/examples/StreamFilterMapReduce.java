@@ -1,5 +1,7 @@
 package examples;
 
+import java.util.function.IntUnaryOperator;
+import java.util.function.Supplier;
 import java.util.stream.IntStream;
 
 public class StreamFilterMapReduce {
@@ -20,6 +22,8 @@ public class StreamFilterMapReduce {
 								return x * 3;
 								})
 							 .sum());
+			
+			
 	}
 
 }

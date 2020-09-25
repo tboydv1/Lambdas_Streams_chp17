@@ -23,7 +23,8 @@ public class IntPredicatTest {
 		 Predicate<Integer> greaterThan5 = x -> x >= 5;
 		 
 		 System.out.printf("%n%s%n",
-		 values.stream()
+		
+		values.stream()
 		 	   .filter(even.and(greaterThan5))
 		 	   .map(String::valueOf)
 		 	   .collect(Collectors.joining(" ")));
